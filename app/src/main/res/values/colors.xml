@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorBranco">#FFFFFF</color>
+    <color name="colorBackground">#6B6963</color>
+    <color name="colorAzul">#2829FD</color>
+    <color name="colorAzulBotao">#42B1DF</color>
+    <color name="colorVerde">#4ECA25</color>
+
+
+    <color name="colorPrimary">#a7ffeb</color>
+    <color name="colorLightColor">#dbffff</color>
+    <color name="colorPrimaryDark">#75ccb9</color>
+    <color name="TextColor">#000000</color>
+
+</resources>

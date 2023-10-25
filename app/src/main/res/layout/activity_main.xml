@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradiente"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_name"
+       android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtNomeCliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textColor="@color/colorAzul"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <Button
+        android:id="@+id/btnMeusDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_custom"
+        android:text="@string/btnMeusDados"
+        android:textColor="@color/colorBranco"
+        android:textStyle="bold"
+        android:onClick="meusDados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNomeCliente" />
+
+    <Button
+        android:id="@+id/btnAtualizarMeusDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_custom_a"
+        android:text="@string/btnAtualizarMeusDados"
+        android:textColor="@color/colorBranco"
+        android:textStyle="bold"
+        android:onClick="atualizarMeusDados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMeusDados" />
+
+
+    <Button
+        android:id="@+id/btnExcluirMinhaConta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_custom_b"
+        android:text="@string/btnExcluirMinhaConta"
+        android:textColor="@color/colorBranco"
+        android:textStyle="bold"
+        android:onClick="excluirMinhaConta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtualizarMeusDados" />
+
+    <Button
+        android:id="@+id/btnConsultarClientesVip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_custom_c"
+        android:text="@string/btnConsultarClientesVip"
+        android:textColor="@color/colorBranco"
+        android:textStyle="bold"
+        android:onClick="consultarClientesVip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnExcluirMinhaConta" />
+
+    <Button
+        android:id="@+id/btnSairDoAplicativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_custom_d"
+        android:text="SAIR DO APLICATIVO"
+        android:textColor="@color/colorBranco"
+        android:textStyle="bold"
+        android:onClick="sairDoAplicativo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConsultarClientesVip" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

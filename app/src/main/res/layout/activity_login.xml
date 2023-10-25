@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.LoginActivity">
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/app_name"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:text="@string/txtLogin"
+        android:textColor="@color/colorAzul"
+        android:textSize="36dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/txtEmail"
+        android:textColor="@color/colorVerde"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/txtHintEmail"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/txtSenhaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/txtSenhaA"
+        android:textColor="@color/colorVerde"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/txtHintSenhaA"
+        android:inputType="numberPassword" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true">
+
+        <CheckBox
+            android:id="@+id/ckLembrar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:onClick="lembrarSenha"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/txtLembrar"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRecurarSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:padding="9dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/txtRecurarSenha"
+            android:textColor="@color/colorVerde"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnAcessar"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btnAcessar" />
+
+        <Button
+            android:id="@+id/btnSejaVip"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/btnSejaVip" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/txtVersaoApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtVersapApp"
+        android:textColor="@color/colorVerde"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtLerPolitica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/txtLerPolitica"
+        android:textColor="@color/colorVerde"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

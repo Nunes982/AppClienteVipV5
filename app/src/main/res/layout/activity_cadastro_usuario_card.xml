@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.CreadencialDeAcessoActivity">
+
+
+    <!-- Cabeçalho -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:src="@mipmap/ic_novo_cadastro" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtAppName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/app_name"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+                        android:textColor="@color/TextColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtClientePessoaFisica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/txtFinalizacaoCadastro"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Small.Inverse"
+                        android:textColor="@color/TextColor"
+                        android:textStyle="bold" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Formulário -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/txtNome"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+                android:textColor="@color/TextColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:enabled="false"
+                android:hint="@string/txtHintNome"
+                android:inputType="textPersonName"
+                android:textColor="@color/TextColor" />
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/txtEmail"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+                android:textColor="@color/TextColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="@string/txtHintEmail"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:id="@+id/txtSenhaA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/txtSenhaA"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+                android:textColor="@color/TextColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editSenhaA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="@string/txtHintSenhaA"
+                android:inputType="numberPassword" />
+
+            <TextView
+                android:id="@+id/txtSenhaB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/txtSenhaB"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+                android:textColor="@color/TextColor"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editSenhaB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="@string/txtHintSenhaB"
+                android:inputType="numberPassword" />
+
+            <CheckBox
+                android:id="@+id/ckTermo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:onClick="validarTermo"
+                android:text="@string/txtTermo"
+                android:textAppearance="@android:style/TextAppearance.Holo.Small"
+                android:textColor="@color/TextColor"
+                android:textStyle="bold" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botões -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCadastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/btnCadastro"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

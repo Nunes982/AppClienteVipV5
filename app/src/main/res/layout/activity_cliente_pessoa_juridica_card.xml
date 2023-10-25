@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.ClientePessoaJuridicaActivity">
+
+
+    <!-- Cabeçalho -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:src="@mipmap/ic_novo_cadastro" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtAppName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/app_name"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+                        android:textColor="@color/TextColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtClientePessoaFisica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="@string/txtClientePessoaJuridica"
+                        android:textAppearance="@android:style/TextAppearance.Holo.Small.Inverse"
+                        android:textColor="@color/TextColor"
+                        android:textStyle="bold" />
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Formulário -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtCNPJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:text="@string/txtCNPJ"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:textColor="@color/TextColor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editCNPJ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/txtHintCNPJ"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtRazaoSocial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:text="@string/txtRazaoSocial"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:textColor="@color/TextColor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editRazaoSocial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="@string/txtHintRazaoSocial"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/txtDataAberturaPJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16sp"
+        android:text="@string/txtDataAberturaPJ"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:textColor="@color/TextColor"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editDataAberturaPJ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <CheckBox
+        android:id="@+id/chSimplesNacional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="simplesNacional"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:text="@string/txtSimplesNacional"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/chMEI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large.Inverse"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="mei"
+        android:text="@string/txtMEI"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSalvarContinuar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@android:style/TextAppearance.Holo.Large"
+        android:layout_marginRight="16dp"
+        android:text="@string/btnSalvarContinuar" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Botões -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="8dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnVoltar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:text="@string/btnVoltar" />
+
+            <Button
+                android:id="@+id/btnCancelar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textAppearance="@android:style/TextAppearance.Holo.Large"
+                android:layout_weight="1"
+                android:text="@string/btnCancelar" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
