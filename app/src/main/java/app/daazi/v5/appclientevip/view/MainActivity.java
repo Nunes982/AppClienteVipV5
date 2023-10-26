@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,9 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.shashank.sony.fancydialoglib.FancyAlertDialog;
 import com.shashank.sony.fancydialoglib.FancyAlertDialogListener;
 import com.shashank.sony.fancydialoglib.Icon;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import app.daazi.v5.appclientevip.R;
 import app.daazi.v5.appclientevip.api.AppUtil;
@@ -39,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
     private SharedPreferences preferences;
 
-    List<Cliente> clientes;
-    List<String> cidades;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,38 +114,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 })
                 .build();
-    }
-
-    private void buscarListaDeClientes() {
-
-        cidades = new ArrayList<>();
-
-
-        clientes = new ArrayList<>();
-
-
-        cidades.add("Brasília");
-        cidades.add("Campo Grande");
-        cidades.add("São Paulo");
-        cidades.add("Curitiba");
-
-        for (int i = 0; i < 10; i++) {
-
-
-            cliente = new Cliente();
-            cliente.setPrimeiroNome("Cliente nº "+i);
-
-            clientes.add(cliente);
-
-        }
-
-
-        for (String obj: cidades) {
-
-            Log.i(AppUtil.LOG_APP,"Obj: "+obj);
-
-        }
-
     }
 
     public void consultarClientesVip(View view) {

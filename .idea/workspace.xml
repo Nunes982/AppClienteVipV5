@@ -9,7 +9,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26e99381-5b55-4ede-8e88-57d61e2d930e" name="Changes" comment="" />
+    <list default="true" id="26e99381-5b55-4ede-8e88-57d61e2d930e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/api/AppDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/api/AppDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/api/AppUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/api/AppUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/view/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/view/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/view/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/view/SplashActivity.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,6 +78,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -76,6 +88,7 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2WqZktwagtQiiEXqrm1BsmPKTtN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -85,6 +98,7 @@
     "DEBUGGABLE_DEVICE": "motorola-moto_g52-0083541237",
     "DEBUGGABLE_PROCESS": "app.daazi.v5.appclientevip",
     "DEBUGGER_ID": "Auto",
+    "PROJECT_TRUSTED_KEY": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -96,6 +110,15 @@
     "last_opened_file_path": "C:/Users/Teste/Downloads",
     "settings.editor.selected.configurable": "editor.preferences.import",
     "two.files.diff.last.used.file": "C:/Users/Teste/Downloads/AppClienteVipV5-Completo.zip!/AppClienteVipV5/app/src/main/java/app/daazi/v5/appclientevip/view/SplashActivity.java"
+  },
+  "keyToStringList": {
+    "com.android.tools.idea.sqlite.queryhistory": [
+      "DELETE FROM clientePJ\nWHERE id =1;",
+      "DELETE FROM clientePJ\nWHERE id (1);",
+      "DELETE FROM clientePJ\nWHERE id  (1);",
+      "DELETE FROM clientePF\nWHERE id IN (1, 2);",
+      "DELETE FROM cliente\nWHERE id IN (1, 2);"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
