@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="26e99381-5b55-4ede-8e88-57d61e2d930e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+    <list default="true" id="26e99381-5b55-4ede-8e88-57d61e2d930e" name="Changes" comment="atualização das permissões">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/api/AppDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/api/AppDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/api/AppUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/api/AppUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/view/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/view/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/view/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/daazi/v5/appclientevip/view/SplashActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,34 +88,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DEBUGGABLE_DEVICE": "motorola-moto_g52-0083541237",
-    "DEBUGGABLE_PROCESS": "app.daazi.v5.appclientevip",
-    "DEBUGGER_ID": "Auto",
-    "PROJECT_TRUSTED_KEY": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "SHOW_ALL_PROCESSES": "false",
-    "android-custom-viewC:/Users/Teste/AppData/Local/Android/Sdk/sources/android-31/android/view/View.java_SELECTED": "View",
-    "android-custom-viewC:/Users/Teste/AppData/Local/Android/Sdk/sources/android-31/android/widget/ScrollView.java_SELECTED": "ScrollView",
-    "cidr.known.project.marker": "true",
-    "com.google.services.firebase.aqiPopupShown": "true",
-    "last_opened_file_path": "C:/Users/Teste/Downloads",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "two.files.diff.last.used.file": "C:/Users/Teste/Downloads/AppClienteVipV5-Completo.zip!/AppClienteVipV5/app/src/main/java/app/daazi/v5/appclientevip/view/SplashActivity.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DEBUGGABLE_DEVICE&quot;: &quot;motorola-moto_g52-0083541237&quot;,
+    &quot;DEBUGGABLE_PROCESS&quot;: &quot;app.daazi.v5.appclientevip&quot;,
+    &quot;DEBUGGER_ID&quot;: &quot;Auto&quot;,
+    &quot;PROJECT_TRUSTED_KEY&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;SHOW_ALL_PROCESSES&quot;: &quot;false&quot;,
+    &quot;android-custom-viewC:/Users/Teste/AppData/Local/Android/Sdk/sources/android-31/android/view/View.java_SELECTED&quot;: &quot;View&quot;,
+    &quot;android-custom-viewC:/Users/Teste/AppData/Local/Android/Sdk/sources/android-31/android/widget/ScrollView.java_SELECTED&quot;: &quot;ScrollView&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;com.google.services.firebase.aqiPopupShown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Teste/Downloads&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/Teste/Downloads/AppClienteVipV5-Completo.zip!/AppClienteVipV5/app/src/main/java/app/daazi/v5/appclientevip/view/SplashActivity.java&quot;
   },
-  "keyToStringList": {
-    "com.android.tools.idea.sqlite.queryhistory": [
-      "DELETE FROM clientePJ\nWHERE id =1;",
-      "DELETE FROM clientePJ\nWHERE id (1);",
-      "DELETE FROM clientePJ\nWHERE id  (1);",
-      "DELETE FROM clientePF\nWHERE id IN (1, 2);",
-      "DELETE FROM cliente\nWHERE id IN (1, 2);"
+  &quot;keyToStringList&quot;: {
+    &quot;com.android.tools.idea.sqlite.queryhistory&quot;: [
+      &quot;DELETE FROM clientePJ\nWHERE id =1;&quot;,
+      &quot;DELETE FROM clientePJ\nWHERE id (1);&quot;,
+      &quot;DELETE FROM clientePJ\nWHERE id  (1);&quot;,
+      &quot;DELETE FROM clientePF\nWHERE id IN (1, 2);&quot;,
+      &quot;DELETE FROM cliente\nWHERE id IN (1, 2);&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="android.template.-943989687">
       <recent name="app.daazi.v5.appclientevip.view" />
@@ -213,7 +208,30 @@
       <option name="presentableId" value="Default" />
       <updated>1697462217547</updated>
     </task>
+    <task id="LOCAL-00001" summary="atualização das permissões">
+      <created>1698354530132</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698354530132</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="atualização das permissões" />
+    <option name="LAST_COMMIT_MESSAGE" value="atualização das permissões" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

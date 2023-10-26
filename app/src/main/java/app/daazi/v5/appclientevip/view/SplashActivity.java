@@ -22,7 +22,7 @@ import app.daazi.v5.appclientevip.api.AppUtil;
 public class SplashActivity extends AppCompatActivity {
 
     // Use qualquer número
-    public static final int APP_PERMISSOES = 2023;
+    public static final int APP_PERMISSOES = 2020;
 
     // Array String com a lista de permissões necessárias
     String[] permissoesRequeridas = new String[]{
@@ -43,11 +43,11 @@ public class SplashActivity extends AppCompatActivity {
         salvarSharedPreferences();
         restaurarSharedPreferences();
 
-        if (validarPermissoes()){
+        if (validarPermissoes()) {
 
             iniciarAplicativo();
 
-        }else {
+        } else {
 
             Toast.makeText(this, "As permissões para o app Cliente Vip estão pendentes... ", Toast.LENGTH_LONG).show();
             finish();
@@ -64,26 +64,18 @@ public class SplashActivity extends AppCompatActivity {
 
                 Intent intent;
 
-              if (isLembrarSenha) {
+                if (isLembrarSenha) {
 
-                    intent = new Intent(
-                            SplashActivity.this,
-                            MainActivity.class
-                    );
+                    intent = new Intent(SplashActivity.this, MainActivity.class);
 
                 } else {
 
-                    intent
-                            = new Intent(
-                            SplashActivity.this,
-                            LoginActivity.class
-                    );
+                    intent = new Intent(SplashActivity.this, LoginActivity.class);
 
                 }
 
                 startActivity(intent);
                 finish();
-
             }
         }, AppUtil.TIME_SPLASH);
     }
@@ -105,25 +97,29 @@ public class SplashActivity extends AppCompatActivity {
     // métodos para ativar permissões
 
     private boolean validarPermissoes() {
-        // Lista para armazenar permissões que precisam ser solicitadas
+
+        int result;
+        // Array para verificar se as permissões forão autorizadas
         List<String> permissoesRequeridas = new ArrayList<>();
 
-        // Verificar se as permissões são concedidas
+        // Adiciona as permissões que o app necessita
         for (String permissao : this.permissoesRequeridas) {
-            int result = ContextCompat.checkSelfPermission(SplashActivity.this, permissao);
+            result = ContextCompat.checkSelfPermission(SplashActivity.this, permissao);
             if (result != PackageManager.PERMISSION_GRANTED) {
-                // Se a permissão não foi concedida, adicioná-la à lista de permissões para solicitar
                 permissoesRequeridas.add(permissao);
             }
         }
 
-        // Se houver permissões para solicitar, solicite-as
+        // Caso o array não esteja vazio, significa que tem permissões
+        // para serem autorizadas
         if (!permissoesRequeridas.isEmpty()) {
-            ActivityCompat.requestPermissions(this, permissoesRequeridas.toArray(new String[permissoesRequeridas.size()]), APP_PERMISSOES);
+            ActivityCompat.requestPermissions(this,
+                    permissoesRequeridas.toArray(new String[permissoesRequeridas.size()]), APP_PERMISSOES);
             return false;
+        } else {
+            iniciarAplicativo();
         }
 
-        // Se nenhuma permissão precisa ser solicitada, retorne true
         return true;
     }
 
@@ -133,22 +129,32 @@ public class SplashActivity extends AppCompatActivity {
 
         switch (requestCode) {
             case APP_PERMISSOES: {
-                boolean todasAsPermissoesAutorizadas = true;
+                if (grantResults.length > 0) {
+                    String permissoesNegadasPeloUsuario = "";
 
-                for (int i = 0; i < grantResults.length; i++) {
-                    if (grantResults[i] == PackageManager.PERMISSION_DENIED) {
-                        todasAsPermissoesAutorizadas = false;
-                        Toast.makeText(SplashActivity.this, "Permissão negada: " + permissions[i], Toast.LENGTH_LONG).show();
+                    for (String permissao : permissoesRequeridas) {
+                        if (grantResults[0] == PackageManager.PERMISSION_DENIED) {
+                            permissoesNegadasPeloUsuario += "\n" + permissao;
+                        }
+                    }
+
+                    if (permissoesNegadasPeloUsuario.length() > 0) {
+
+                        Toast.makeText(SplashActivity.this, "Permissões negadas pelo usuário.", Toast.LENGTH_LONG).show();
+
+                    } else {
+                        Toast.makeText(SplashActivity.this, "Todas as Permissões autorizadas pelo usuário.", Toast.LENGTH_LONG).show();
+
+                        iniciarAplicativo();
+                        break;
                     }
                 }
 
-                if (todasAsPermissoesAutorizadas) {
-                    Toast.makeText(SplashActivity.this, "Todas as permissões autorizadas pelo usuário.", Toast.LENGTH_LONG).show();
-                    iniciarAplicativo();
-                }
             }
+            default:
+                iniciarAplicativo();
+                break;
         }
     }
-
 
 }
